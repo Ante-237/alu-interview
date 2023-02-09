@@ -8,8 +8,8 @@
 # if (n - characters)%2 == 0:
 # perform 
 # copy = characters
- #           characters += copy
- #          operations += 2
+#           characters += copy
+#          operations += 2
 #      else:
 #if operations == 0:
 #                operations += 1
@@ -17,7 +17,10 @@
 #  operations += 1
 # return operations
 # Minimum number of operations 
-
+"""
+    perform minimum
+    operations
+    """
 
 def minOperations(n):
     """
