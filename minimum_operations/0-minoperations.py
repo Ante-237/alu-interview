@@ -1,27 +1,29 @@
 #!/usr/bin/python3
-"""
+# def minOperations(n):
+# characters = 1
+# operations = 0
+# copy = characters
+
+# while characters < n:
+# if (n - characters)%2 == 0:
+# perform 
+# copy = characters
+ #           characters += copy
+ #          operations += 2
+#      else:
+#if operations == 0:
+#                operations += 1
+#  characters += copy
+#  operations += 1
+# return operations
+# Minimum number of operations 
+
+
 def minOperations(n):
-
-    characters = 1
-    operations = 0
-    copy = characters
-
-    while characters < n:
-        if (n - characters)%2 == 0:
-            # perform 
-            copy = characters
-            characters += copy
-            operations += 2
-        else:
-            if operations == 0:
-                operations += 1
-            characters += copy
-            operations += 1
-    return operations
-
-    Minimum number of operations 
-"""
-
+    """
+    get minimum double , and one 
+    operations
+    """
     operations = 0
     characters = 2
     while n > 1:
