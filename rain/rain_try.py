@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# building block 2D space
+
 
 def rain(walls):
 
@@ -16,7 +16,7 @@ def rain(walls):
                 list_one.append(temp_one)
 
         for value in range(0,len(walls)):
-
+        
             if list_one[value] == "*":
                 if width > 0:
                     list_three.append(width)
@@ -35,3 +35,13 @@ def rain(walls):
                     output += list_two[i] * list_three[i]
 
     return output
+    
+    print(list_one)
+    print(list_two)
+    print(list_three)
+    print("Output  = {}".format(output))
+
+walls = [2, 0, 0, 4, 0, 0, 1, 0]
+rain(walls)
+walls = [0, 1, 0, 2, 0, 3, 0, 4]
+rain(walls)
