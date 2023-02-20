@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-# building block 2D space
+""" rain
+    caluculate 2D space
+"""
+
 
 def rain(walls):
 
@@ -15,7 +18,7 @@ def rain(walls):
             else:
                 list_one.append(temp_one)
 
-        for value in range(0,len(walls)):
+        for value in range(0, len(walls)):
 
             if list_one[value] == "*":
                 if width > 0:
