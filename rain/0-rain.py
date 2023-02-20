@@ -11,7 +11,7 @@ def rain(walls):
     list_three = []
     width = 0
     output = 0
-    if len(walls) < 1:
+    if len(walls) > 0:
         for temp_one in walls:
             if temp_one > 0:
                 list_one.append("*")
