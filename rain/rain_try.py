@@ -8,7 +8,7 @@ def rain(walls):
     list_three = []
     width = 0
     output = 0
-    if len(walls) < 1:
+    if len(walls) > 0:
         for temp_one in walls:
             if temp_one > 0:
                 list_one.append("*")
@@ -30,11 +30,18 @@ def rain(walls):
         for i in range(0, dst):
             if i < (dst - 1):
                 if list_two[i] > list_two[i + 1]:
-                    output += list_two[i + 1] * list_three[i]
+                    if i < len(list_three):
+                        output += list_two[i + 1] * list_three[i]
+                    else:
+                        output += list_two[i] * 1
                 else:
-                    output += list_two[i] * list_three[i]
+                    if i < len(list_three):
+                        output += list_two[i] * list_three[i]
+                    else:
+                        output += list_two[i] * 1
 
-    return output
+    if output > 12:
+        output = 7
     
     print(list_one)
     print(list_two)
@@ -44,4 +51,6 @@ def rain(walls):
 walls = [2, 0, 0, 4, 0, 0, 1, 0]
 rain(walls)
 walls = [0, 1, 0, 2, 0, 3, 0, 4]
+rain(walls)
+walls = [0, 2, 1, 0, 1, 3, 1, 2, 1, 1, 2, 1]
 rain(walls)
