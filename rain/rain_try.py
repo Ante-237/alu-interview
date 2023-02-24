@@ -48,6 +48,7 @@ def rain(walls):
     print(list_three)
     print("Output  = {}".format(output))
 
+# test area
 walls = [2, 0, 0, 4, 0, 0, 1, 0]
 rain(walls)
 walls = [0, 1, 0, 2, 0, 3, 0, 4]
