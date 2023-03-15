@@ -8,8 +8,9 @@ def pascal_triangle(n):
     if n <= 0:
         return holder
     else:
-        for i in range(n):
+        for i in range(1, n+1):
             subholder = []
-            for j in range(i+1):
-                subholder.append(factorial(i)//(factorial(j)*factorial(i-j)))
+            c = 1
+            for j in range(1, i+1):
+                subholder.append(c * (i - j) // j)
         holder.append(subholder)
