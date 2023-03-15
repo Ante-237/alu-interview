@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # creating pascal triangle
-
+''' pascal triangle '''
 
 def pascal_triangle(n):
     holder = []
