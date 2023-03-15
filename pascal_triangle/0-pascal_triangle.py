@@ -13,6 +13,7 @@ def pascal_triangle(n):
             subholder = []
             c = 1
             for j in range(1, i+1):
-                subholder.append(c * (i - j) // j)
+                c = c * (i - j) // j
+                subholder.append(c)
         holder.append(subholder)
     return holder
