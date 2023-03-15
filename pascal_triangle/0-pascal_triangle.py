@@ -2,6 +2,7 @@
 # creating pascal triangle
 ''' pascal triangle '''
 
+
 def pascal_triangle(n):
     """ the only function """
     holder = []
@@ -14,3 +15,4 @@ def pascal_triangle(n):
             for j in range(1, i+1):
                 subholder.append(c * (i - j) // j)
         holder.append(subholder)
+    return holder
